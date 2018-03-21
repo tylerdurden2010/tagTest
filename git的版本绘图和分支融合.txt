@@ -1,0 +1,33 @@
+git commit -m "my first test"
+git tag -a v1.0 -m "the first push"
+git show v1.0
+git add .
+git commit -m "sec"
+git add .
+git commit -m "third"
+git show v1.0
+git reset --hard a3d0c1f
+git reflog
+git checkout -b bugfix
+git branch
+git checkout master
+git reflog
+git reset --hard 7ce79dc
+git reset --help
+git add .
+git commit -m "bug fixed"
+git tag v1.1
+git checkout master
+git merge
+git merge bugfix
+git status
+git add .
+git commit -m "latest"
+git branch
+git tag
+git branch -d bugfix
+git tag
+git tag v1.1
+git show v1.1
+git push
+git push origin --tags
